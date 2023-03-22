@@ -10,7 +10,11 @@ import org.junit.runner.RunWith;
         plugin = {"pretty","json:target/cucumber.json"}, //extra cucumber plugins
         features = "src/test/resources/features", // path for feature files
         glue = "steps", // providing path for the .feature file steps code definition
+<<<<<<< HEAD
         tags = "@Api", // running specific feature or scenario by tag(s). Can do with "and" "or" condition
+=======
+        tags = "@RTB-99", // running specific feature or scenario by tag(s). Can do with "and" "or" condition
+>>>>>>> 78d875f (MyFirstUpload)
         dryRun = false // true = run only undefined steps in .feature file
 )
 
