@@ -1,0 +1,109 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-19T17:18:46.350Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.manage()\" because \"this.driver\" is null\r\n\tat steps.Hooks.setUp(Hooks.java:32)\r\n",
+              "duration": 6000700,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validating login functionality",
+        "description": "",
+        "id": "login-feature;validating-login-functionality",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"this.driver\" is null\r\n\tat steps.Hooks.tearDown(Hooks.java:42)\r\n",
+              "duration": 2999100,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user navigates to \"MindtekApp\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MindtekApp\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.Hooks.user_navigates_to_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters username \"Shirin\" and password \"Shirin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shirin\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"Shirin123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "steps.WebOrdersSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user navigates login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mindtek"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MindtekStudentShirinApp.feature",
+    "tags": [
+      {
+        "name": "@mindtek",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
