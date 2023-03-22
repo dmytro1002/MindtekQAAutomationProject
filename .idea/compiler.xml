@@ -9,5 +9,8 @@
         <module name="MindtekCucumberAutomationProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MindtekCucumberAutomationProject" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
