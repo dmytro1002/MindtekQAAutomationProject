@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-03-19T17:18:46.350Z",
+        "start_timestamp": "2023-03-21T01:48:24.234Z",
         "before": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.manage()\" because \"this.driver\" is null\r\n\tat steps.Hooks.setUp(Hooks.java:32)\r\n",
-              "duration": 6000700,
+              "error_message": "java.lang.NullPointerException\n\tat steps.Hooks.setUp(Hooks.java:32)\n",
+              "duration": 3585000,
               "status": "failed"
             },
             "match": {
@@ -16,15 +16,15 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Validating login functionality",
+        "line": 19,
+        "name": "Validating successful place order",
         "description": "",
-        "id": "login-feature;validating-login-functionality",
+        "id": "pizza-application-place-order-functionality;validating-successful-place-order;;2",
         "after": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"this.driver\" is null\r\n\tat steps.Hooks.tearDown(Hooks.java:42)\r\n",
-              "duration": 2999100,
+              "error_message": "java.lang.NullPointerException\n\tat steps.Hooks.tearDown(Hooks.java:42)\n",
+              "duration": 1089000,
               "status": "failed"
             },
             "match": {
@@ -33,18 +33,19 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
+              "duration": 117000,
               "status": "skipped"
             },
-            "line": 5,
-            "name": "user navigates to \"MindtekApp\" application",
+            "line": 6,
+            "name": "user navigates to \"MindtekPizzaApp\" application",
             "match": {
               "arguments": [
                 {
-                  "val": "\"MindtekApp\"",
+                  "val": "\"MindtekPizzaApp\"",
                   "offset": 18
                 }
               ],
@@ -54,54 +55,292 @@
           },
           {
             "result": {
+              "duration": 50000,
               "status": "skipped"
             },
-            "line": 6,
-            "name": "user enters username \"Shirin\" and password \"Shirin123\"",
+            "line": 7,
+            "name": "user creates pizza order",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Shirin\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"Shirin123\"",
-                  "offset": 43
-                }
-              ],
-              "location": "steps.WebOrdersSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
+              "location": "steps.MindtekPizzaAppSteps.user_creates_pizza_order(io.cucumber.datatable.DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Pizza",
+                  "Small 6 Slices - no toppings"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping1",
+                  "Mushrooms"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping2",
+                  "Extra cheese"
+                ]
+              },
+              {
+                "cells": [
+                  "Quantity",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Name",
+                  "Patel Harsh"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "patel@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "123456789"
+                ]
+              },
+              {
+                "cells": [
+                  "Payment",
+                  "Cash on Pickup"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 10000,
               "status": "skipped"
             },
-            "line": 7,
-            "name": "user navigates login",
-            "match": {},
+            "line": 16,
+            "name": "user validates that order is created with message \"Thank you for your order! TOTAL: \" \"1\" \"Small 6 Slices - no toppings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your order! TOTAL: \"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"Small 6 Slices - no toppings\"",
+                  "offset": 90
+                }
+              ],
+              "location": "steps.MindtekPizzaAppSteps.user_validates_that_order_is_created_with_message(java.lang.String,java.lang.String,java.lang.String)"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@mindtek"
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@RTB-99"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-21T01:48:24.282Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat steps.Hooks.setUp(Hooks.java:32)\n",
+              "duration": 125000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validating successful place order",
+        "description": "",
+        "id": "pizza-application-place-order-functionality;validating-successful-place-order;;3",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat steps.Hooks.tearDown(Hooks.java:42)\n",
+              "duration": 113000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigates to \"MindtekPizzaApp\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MindtekPizzaApp\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.Hooks.user_navigates_to_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user creates pizza order",
+            "match": {
+              "location": "steps.MindtekPizzaAppSteps.user_creates_pizza_order(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Pizza",
+                  "Large 10 Slices - 2 toppings"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping1",
+                  "Olives"
+                ]
+              },
+              {
+                "cells": [
+                  "Topping2",
+                  "Salami"
+                ]
+              },
+              {
+                "cells": [
+                  "Quantity",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "Name",
+                  "John Doe"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "john@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "987654321"
+                ]
+              },
+              {
+                "cells": [
+                  "Payment",
+                  "Credit Card"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 358000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user validates that order is created with message \"Thank you for your order! TOTAL: \" \"2\" \"Large 10 Slices - 2 toppings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your order! TOTAL: \"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"Large 10 Slices - 2 toppings\"",
+                  "offset": 90
+                }
+              ],
+              "location": "steps.MindtekPizzaAppSteps.user_validates_that_order_is_created_with_message(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@RTB-99"
           }
         ]
       }
     ],
-    "name": "Login feature",
+    "name": "Pizza application place order functionality",
     "description": "",
-    "id": "login-feature",
+    "id": "pizza-application-place-order-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/MindtekStudentShirinApp.feature",
+    "uri": "file:src/test/resources/features/MindtekPizzaApp.feature",
     "tags": [
       {
-        "name": "@mindtek",
+        "name": "@regression",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 20
         }
       }
     ]
